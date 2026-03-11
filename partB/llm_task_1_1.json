@@ -1,0 +1,68 @@
+{
+  "student_metadata": {
+    "name": "Navnit Naman",
+    "roll_number": "230085",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "task": "Task 1.1",
+    "submission_date": "2026-03-11"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Antigravity (Gemini)",
+      "model": "Gemini-2.5-Pro",
+      "provider": "Google DeepMind"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Antigravity (Gemini)",
+      "model": "Gemini-2.5-Pro",
+      "purpose": "Understanding the step-by-step algorithm of DCD from the paper",
+      "prompt": "Read the paper 'A Dual Coordinate Descent Method for Large-scale Linear SVM' and explain the algorithm as a step-by-step sequence from input to output, with references to equations.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided a structured outline of the algorithm steps; I cross-checked each step with the paper equations (Eq. 4, 6-12) and refined the description to be specific to this paper.",
+      "task_tag": "Task 1.1",
+      "code_used_verbatim": false,
+      "student_modification": "Not applicable — no code in Task 1.1.",
+      "student_verification": "Every algorithm step was verified against the paper: random permutation (Section 3.1), closure-form update (Eq. 9-11), w update (Eq. 12), stopping condition (Eq. 17).",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-11",
+      "tool_name": "Antigravity (Gemini)",
+      "model": "Gemini-2.5-Pro",
+      "purpose": "Drafting the Final Summary Sentence for Task 1.1",
+      "prompt": "Write a one-sentence summary of the DCD paper that covers: what problem it solves, and what the authors claim makes it better than existing alternatives.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided a template sentence which I edited to accurately reflect the O(log(1/eps)) convergence claim and the specific baselines mentioned in the paper (Pegasos, TRON, SVMperf).",
+      "task_tag": "Task 1.1",
+      "code_used_verbatim": false,
+      "student_modification": "Not applicable — no code in Task 1.1.",
+      "student_verification": "Verified that all claims in the summary sentence are supported by the abstract and Section 1 of the paper.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Read the paper 'A Dual Coordinate Descent Method for Large-scale Linear SVM' and explain the algorithm as a step-by-step sequence from input to output, with references to equations.",
+      "why_selected": "This was the most impactful prompt — it structured my understanding of Algorithm 1 which is the core of Task 1.1."
+    },
+    {
+      "rank": 2,
+      "prompt": "Write a one-sentence summary of the DCD paper that covers: what problem it solves, and what the authors claim makes it better than existing alternatives.",
+      "why_selected": "Generated the Final Summary Sentence which synthesizes the paper's key claim."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 1.1 of Part B. All content in the notebook was reviewed and verified against the original paper.",
+    "understanding_acknowledged": true,
+    "signature": "Navnit Naman",
+    "date": "2026-03-11"
+  }
+}

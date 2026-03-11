@@ -1,0 +1,68 @@
+{
+  "student_metadata": {
+    "name": "Navnit Naman",
+    "roll_number": "230085",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "task": "Task 1.3",
+    "submission_date": "2026-03-11"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Antigravity (Gemini)",
+      "model": "Gemini-2.5-Pro",
+      "provider": "Google DeepMind"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Antigravity (Gemini)",
+      "model": "Gemini-2.5-Pro",
+      "purpose": "Identifying the main baseline and its limitation as described in the DCD paper",
+      "prompt": "In the DCD linear SVM paper (Hsieh et al. ICML 2008), which baseline method does the paper compare most directly against, and what specific limitation of that baseline does the paper identify?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Confirmed that the primary methodological counterpart is the primal coordinate descent (Chang et al. 2008), and highlighted the L1-SVM non-differentiability limitation.",
+      "task_tag": "Task 1.3",
+      "code_used_verbatim": false,
+      "student_modification": "Not applicable.",
+      "student_verification": "Verified by reading Section 1 (Introduction) and Section 4.2 of the paper.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-11",
+      "tool_name": "Antigravity (Gemini)",
+      "model": "Gemini-2.5-Pro",
+      "purpose": "Reasoning about when DCD would not outperform the baseline",
+      "prompt": "Based on the DCD linear SVM paper, identify one scenario where the DCD method would NOT outperform the primal coordinate descent or Pegasos baselines. This is a reasoned inference, not something explicitly stated in the paper.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested the dense data scenario, which I verified against Table 1 in the paper showing that the O(n-bar) advantage vanishes when n-bar approaches n.",
+      "task_tag": "Task 1.3",
+      "code_used_verbatim": false,
+      "student_modification": "Not applicable.",
+      "student_verification": "Cross-checked with Table 1 (cost comparison) and the paragraph 'For linear SVM, if l is large...' in Section 4.1.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "In the DCD linear SVM paper, which baseline method does the paper compare most directly against, and what specific limitation of that baseline does the paper identify?",
+      "why_selected": "Most critical for the 2-mark baseline identification question."
+    },
+    {
+      "rank": 2,
+      "prompt": "Based on the DCD linear SVM paper, identify one scenario where the DCD method would NOT outperform the primal coordinate descent or Pegasos baselines.",
+      "why_selected": "Directly addressed the 4-mark reasoned inference question."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare this is a complete record of LLM usage for Task 1.3. All answers were verified against the paper.",
+    "understanding_acknowledged": true,
+    "signature": "Navnit Naman",
+    "date": "2026-03-11"
+  }
+}

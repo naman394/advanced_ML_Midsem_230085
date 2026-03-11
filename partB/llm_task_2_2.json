@@ -1,0 +1,88 @@
+{
+  "student_metadata": {
+    "name": "Navnit Naman",
+    "roll_number": "230085",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "task": "Task 2.2",
+    "submission_date": "2026-03-11"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Antigravity (Gemini)",
+      "model": "Gemini-2.5-Pro",
+      "provider": "Google DeepMind"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-11",
+      "tool_name": "Antigravity (Gemini)",
+      "model": "Gemini-2.5-Pro",
+      "purpose": "Implementing the DCD algorithm in Python from the paper equations",
+      "prompt": "Implement Algorithm 1 from the paper 'A Dual Coordinate Descent Method for Large-scale Linear SVM' (Hsieh et al. ICML 2008) in Python/NumPy. Include comments mapping each code block to the paper equations.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided the initial code structure. I verified and corrected the gradient computation (Eq. 10+12), the projected gradient computation (Eq. 8 for stopping check), and the L2-SVM Q-bar diagonal formula (Eq. 4).",
+      "task_tag": "Task 2.2",
+      "code_used_verbatim": false,
+      "student_modification": "Corrected the projected gradient computation for the L2-SVM case (U=inf case), fixed the stopping condition to include both M-m<eps AND |M|<eps AND |m|<eps per Footnote 5 of the paper, and added convergence history tracking.",
+      "student_verification": "Verified the update rule against Eq. (9)-(11) and Eq. (12) of the paper. Verified convergence behavior by checking monotone objective decrease.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-11",
+      "tool_name": "Antigravity (Gemini)",
+      "model": "Gemini-2.5-Pro",
+      "purpose": "Writing the markdown annotations for each code block",
+      "prompt": "For each code block in the DCD implementation, write 2-3 sentence annotations explaining what the code computes and citing the specific equation from the paper.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided annotation templates; I edited each one to ensure the equation references are correct.",
+      "task_tag": "Task 2.2",
+      "code_used_verbatim": false,
+      "student_modification": "Corrected equation references (e.g., changed generic 'Eq. 4' to specific 'Eq. 9-11' for the sub-problem solve) and added specific paper section references.",
+      "student_verification": "Each annotation was verified against the corresponding paper section.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-11",
+      "tool_name": "Antigravity (Gemini)",
+      "model": "Gemini-2.5-Pro",
+      "purpose": "Designing the convergence plots",
+      "prompt": "What plots should I include to verify the DCD algorithm behavior? Reference what the paper shows in its figures.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Suggested primal objective, test accuracy, and M-m gap — consistent with Figures 3-4 of the paper.",
+      "task_tag": "Task 2.2",
+      "code_used_verbatim": false,
+      "student_modification": "Added log-scale for M-m gap plot which makes convergence rate more visible.",
+      "student_verification": "Verified that the three plots correspond to what the paper tracks in its experimental evaluation.",
+      "confidence_level": 5
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Implement Algorithm 1 from 'A Dual Coordinate Descent Method for Large-scale Linear SVM' in Python/NumPy. Include comments mapping each code block to the paper equations.",
+      "why_selected": "Core implementation prompt — most impactful for Task 2.2."
+    },
+    {
+      "rank": 2,
+      "prompt": "For each code block in the DCD implementation, write 2-3 sentence annotations explaining what the code computes and citing the specific equation from the paper.",
+      "why_selected": "Task 2.2 is graded primarily on code-to-paper annotations."
+    },
+    {
+      "rank": 3,
+      "prompt": "What plots should I include to verify the DCD algorithm behavior?",
+      "why_selected": "Led to the three-panel convergence plot design."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare this is a complete record of LLM usage for Task 2.2. The DCD implementation was verified by checking monotone objective decrease and comparison with sklearn LinearSVC.",
+    "understanding_acknowledged": true,
+    "signature": "Navnit Naman",
+    "date": "2026-03-11"
+  }
+}
